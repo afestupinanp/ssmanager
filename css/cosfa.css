@@ -1,0 +1,334 @@
+body {
+    padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+::selection {
+    color: #FFF;
+    background-color: #00AAFF;
+}
+
+div.container {
+    font-family: Arial, sans-serif;
+}
+
+div.botoncitos {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: linear-gradient(to bottom, #f7f7f7, #d5d5d5);
+    border-radius: 175px;
+}
+
+div.container.main {
+    font-size: 13pt;
+}
+
+.custom-button {
+    
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #17750c; 
+    transition: border-bottom-color 0.2s !important;
+}
+
+.custom-button:hover {
+    border-bottom-color: #FFF !important;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #17750c;
+}
+.navbar.navbar-inverse.navbar-fixed-top a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+ul.nav.navbar-nav a {
+    border-bottom-style: solid;
+    border-bottom-color: #17750c;
+    transition: all 0.2s;
+}
+
+.newColor {
+    border-bottom-color: rgb(29, 24, 152) !important;
+}
+
+ul.nav.navbar-nav a:hover {
+    border-bottom-color: #FFFFFF !important;
+}
+ul.collapse.navbar-collapse {
+    float: right;
+}
+ul.navbar-collapse.collapse.in {
+    float: left;
+}
+hr {
+    color: #000000;
+}
+footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+a.btn.btn-default.btn-circle.btn-lg {
+    border-radius: 150px;
+    transition: all 0.2s;
+    margin: 10px;
+    font-size: 18pt;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a.btn.btn-default.btn-circle.btn-lg#fb {
+    background-color: #3b5998;
+    color: #FFFFFF;
+}
+a.btn.btn-default.btn-circle.btn-lg#tw {
+    background-color: #1da1f2;
+    color: #FFFFFF;
+}
+a.btn.btn-default.btn-circle.btn-lg#yt {
+    background-color: #cd201f;
+    color: #FFFFFF;
+}
+a.btn.btn-default.btn-circle.btn-lg#fb:hover, a.btn.btn-default.btn-circle.btn-lg#tw:hover, a.btn.btn-default.btn-circle.btn-lg#yt:hover {
+    background-color: #FFFFFF;
+    transform: scale(1.5, 1.5);
+    font-weight: bold;
+}
+
+a.btn.btn-default.btn-circle.btn-lg#fb:hover {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+a.btn.btn-default.btn-circle.btn-lg#yt:hover {
+    color: #cd201f;
+    border-color: #cd201f;
+}
+
+a.btn.btn-default.btn-circle.btn-lg#tw:hover {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+a.btn.btn-default.btn-circle.btn-lg span {
+    width: 24px;
+    height: 24px;
+}
+
+form.cosfa-register {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+input[type = "email"], input[type = "password"], input[type = "number"], input[type = "text"], input[type="date"], textarea {
+    border: 2px solid #dadada;
+    outline-offset: 1px;
+    outline-color: #cee;
+    padding: 7px;
+
+    transition: all 0.2s;
+}
+input[type = "email"]:focus, input[type = "password"]:focus, input[type = "number"]:focus, input[type = "text"]:focus,  input[type="date"]:hover, textarea:focus {
+    box-shadow: 0px 0px 10px 1px #000000;
+}
+
+#texter:focus {
+    box-shadow: 0px 0px 15px 5px #FFF;
+}
+
+input#subm, button.chido {
+    padding: 10px;
+    border: 0;
+    background-color: #0080FF;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+
+a.boton {
+    padding: 10px !important;
+    border: 0 !important;
+    background-color: #0080FF !important;
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    border-radius: 100px !important;
+    transition: all 0.5s !important;
+}
+
+input#subm:hover, button.chido:hover, a.boton:hover {
+    background-color: #0010FF;
+}
+
+p.date {
+    font-weight: bold;
+    font-style: italic;
+}
+
+div.container.main a {
+    color: #00AAFF;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+div.container.main a:hover {
+    border-radius: 25px;
+    background-color: #00CCFF;
+    padding: 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.carousel {
+    overflow: hidden;
+    border-radius: 50px 50px 50px 50px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    /*line-height: 30px;*/
+    background: #80aaff;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 150px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
+}
+
+.dropdown-menu a {
+    color: #FFF;
+    background-color: transparent !important;
+    font-weight: bold;
+    border-bottom: none !important;
+    background-color: #00CCFF;
+    transition: background-color 0.2s !important;
+ }
+
+ .dropdown-menu a:hover {
+     color: #000 !important;
+     background-color: #FFF !important;
+ }
+
+ .dropdown-menu.profile {
+     background-color: #FFF !important;
+ }
+
+ .dropdown-menu.profile a {
+     transition: all 0.2s !important;
+ }
+
+ .dropdown-menu.profile a:hover {
+     color: #FFF !important;
+     background-color: #00CCFF !important;
+ }
+
+ .ui-dialog-titlebar-close {
+     background-color: transparent !important;
+     color: #aaa !important;
+     content: "X";
+ }
+
+ .navbar-right {
+     padding: 0px;
+ }
+
+ #nav-dropdown a {
+     background-color: transparent !important;
+     transition: all 0.2s;
+ }
+
+ #nav-dropdown a:hover {
+     color: #000 !important;
+     background-color: #FFF !important;
+ }
+
+ #nav-dropdown a#toggler {
+     border-bottom: 3px solid #17750c;
+     transition: all 0.2s !important;
+     color: #fff !important;
+ }
+
+ #nav-dropdown a#toggler:hover {
+     border-bottom-color: #FFF !important;
+     background-color: transparent !important;
+ }
+
+ select {
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    border-color: #dcdcdc;
+    font-weight: bold;
+}
+
+select option {
+    font-weight: inherit;
+}
+
+.cosfa-message {
+    border-left: 15px solid;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 10pt;
+    width: 100%;
+    float: center;
+}
+
+.cosfa-message::before, .cosfa-message::after {
+    height: 0px;
+    content: " ";
+    clear: both;
+}
+
+.cosfa-message span {
+    font-size: 24pt;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.cosfa-message.alert {
+    border-left-color: #ff2626;
+    background-color: #ff8484;
+}
+
+.cosfa-message.message {
+    border-left-color: #00a1ff;
+    background-color: #70caff;
+}
+
+.cosfa-message.adminmsg {
+    border-left-color: #00a020;
+    background-color: #95ff89;
+}

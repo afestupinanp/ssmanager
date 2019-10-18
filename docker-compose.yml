@@ -1,0 +1,45 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - app
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin:5.2-apache
+    depends_on:
+      - db
+    ports:
+      - 8080:80
+    environment:
+      - PMA_HOST=db
+      - MYSQL_ROOT_PASSWORD=
+    networks:
+      - app
+  db:
+    ports:
+      - 3306:3306
+    container_name: mariadb
+    image: mariadb:latest
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    environment:
+      - MARIADB_ROOT_PASSWORD=
+      - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=true
+    networks:
+      - app
+volumes:
+  mariadb_data:
+networks:
+  app:
+    driver: bridge
+
